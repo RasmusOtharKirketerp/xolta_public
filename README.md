@@ -47,6 +47,11 @@ To find site-id open dev.tools and find the site-id here : (the device-id is als
   * ![image](https://user-images.githubusercontent.com/15995296/224819502-9cd78102-55b8-4ee0-ae88-e812d3c075c4.png)
 
 
+## Start
+Start the python file
+*stack_days_one_color.py
+
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
