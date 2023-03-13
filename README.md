@@ -1,9 +1,9 @@
 
-This will launch a python plots and displays the battery status, solar cell production, and electricity grid consumption metrics for the last many days current day. 
+This will launch a python plots and displays the battery status, solar cell production, and electricity grid consumption metrics for the last many days day. 
 
 ## Data Sources
 
-The data for this dashboard is sourced from your XOLTA battery system. The data is collected almost real-time.
+The data for this program is sourced from your XOLTA battery system. The data is collected almost real-time.
 
 ## Visualization Examples
 
