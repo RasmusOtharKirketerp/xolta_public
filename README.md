@@ -25,11 +25,6 @@ The following line chart shows the electricity grid consumption over the last 7 
 
 ![Electricity Grid Consumption](https://user-images.githubusercontent.com/15995296/224811609-42d8c464-0936-4321-ac3b-8608f41eaeba.png)
 
-### Multi-day Plot
-
-The following chart shows the battery status, solar cell production, and electricity grid consumption for the last 7 days in a single plot:
-
-![Multi-day Plot](https://user-images.githubusercontent.com/15995296/INSERT-IMAGE-URL-HERE)
 
 ## License
 
