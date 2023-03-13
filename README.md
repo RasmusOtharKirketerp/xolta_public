@@ -1,5 +1,5 @@
 
-This will launch a python plot and displays the battery status, solar cell production, and electricity grid consumption metrics for the last many days current day. 
+This will launch a python plots and displays the battery status, solar cell production, and electricity grid consumption metrics for the last many days current day. 
 
 ## Data Sources
 
@@ -37,4 +37,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-- Thanks to the developers of Matplotlib and Pandas for providing excellent data visualization tools.
+- Thanks to https://github.com/AThomsen for making the get token stuff
