@@ -3,8 +3,10 @@
 Use this to show multible days in one plot/screen.
 
 
-1 - Get data from you XOLTA battery
-2 - Draws the following plots in python
+Get data from you XOLTA battery
+Draws the following plots in python
+
+<br>
 battery status pr day
 ![image](https://user-images.githubusercontent.com/15995296/224811427-6f456238-dc2c-4dc5-8af7-408b9ab6346e.png)
 
