@@ -26,7 +26,22 @@ The following line chart shows the electricity grid consumption over the last 7 
 ![Electricity Grid Consumption](https://user-images.githubusercontent.com/15995296/224811609-42d8c464-0936-4321-ac3b-8608f41eaeba.png)
 
 ## Setup
-asdsad
+
+### Create a config file contaning this :
+[api_credentials]
+username = <email>
+password = <password>
+
+[api_xolta_id]
+device-id = <id>
+site-id = <id>
+
+and point to this file in get_config.py
+
+### how to find device-id and site-id
+To find your device
+* login your app.xolta.com
+
 
 ## License
 
