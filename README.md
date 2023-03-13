@@ -41,6 +41,8 @@ and point to this file in get_config.py
 ### how to find device-id and site-id
 To find your device
 * login your app.xolta.com
+  ![image](https://user-images.githubusercontent.com/15995296/224817946-979d9b31-2e5b-45d1-8e38-3c15fd41ab3e.png)
+
 
 
 ## License
