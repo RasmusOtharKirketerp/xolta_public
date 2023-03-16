@@ -28,7 +28,7 @@ def plot_data(df, title):
     # Define a colormap
     cmap = cm.get_cmap('Blues')
 
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(figsize=(11, 7))
 
     today_date = datetime.now().date()
     today_data = df.loc[df['date'] == today_date]
@@ -48,7 +48,7 @@ def plot_data(df, title):
         x_ticks = np.linspace(start_time, x_max)
         ax.set_xticks(x_ticks)
         x_tick_labels = pd.to_datetime(x_ticks, unit='s').strftime('%H:%M')
-        ax.set_xticklabels(x_tick_labels)
+        ax.set_xticklabels(x_tick_labels, rotation=-90)
 
         if date == today_date:
             # Use green for today's date
