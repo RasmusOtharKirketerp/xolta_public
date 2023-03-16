@@ -69,3 +69,4 @@ def plot_data(df, title):
     plt.ylabel("KwP/Procent")
     plt.title(title + " pr. dag")
     plt.legend()
+    fig.subplots_adjust(left=0.05, right=0.95, top=0.95, bottom=0.1)
