@@ -12,20 +12,19 @@ The data for this program is sourced from your XOLTA battery system. The data is
 ### Battery Status
 
 The following gauge shows the current battery status for the last 7 days:
-
-![Battery Status](https://user-images.githubusercontent.com/15995296/224811427-6f456238-dc2c-4dc5-8af7-408b9ab6346e.png)
+![battery status](Batteristatus.png)
 
 ### Solar Cell Production
 
 The following line chart shows the solar cell production over the last 7 days:
+![solar cell production](Solcelleproduktion.png)
 
-![Solar Cell Production](https://user-images.githubusercontent.com/15995296/224811558-3380118c-eccc-4434-ad55-f6667eb4b386.png)
 
 ### Electricity Grid Consumption
 
 The following line chart shows the electricity grid consumption over the last 7 days:
 
-![Electricity Grid Consumption](https://user-images.githubusercontent.com/15995296/224811609-42d8c464-0936-4321-ac3b-8608f41eaeba.png)
+![electricity grid consumption](ELnetforbrug.png)
 
 ## Setup
 
