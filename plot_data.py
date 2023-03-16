@@ -30,6 +30,9 @@ def plot_data(df, title):
 
     fig, ax = plt.subplots()
 
+    today_date = datetime.now().date()
+    today_data = df.loc[df['date'] == today_date]
+
     for i, (date, date_data) in enumerate(df.groupby('date')):
         start_time = datetime.combine(date, datetime.min.time())
         dk_timezone = pytz.timezone('Europe/Copenhagen')
@@ -47,16 +50,22 @@ def plot_data(df, title):
         x_tick_labels = pd.to_datetime(x_ticks, unit='s').strftime('%H:%M')
         ax.set_xticklabels(x_tick_labels)
 
-        # Determine the color based on the days_since_today value
-        color = cmap(i / (len(df.groupby('date')) - 1))
+        if date == today_date:
+            # Use green for today's date
+            color = 'green'
+            newlinewidth = 4
+        else:
+            # Use cmap for other dates
+            color = cmap(i / (len(df.groupby('date')) - 1))
+            newlinewidth = 2
 
         ax.plot(filtered_data['x'], filtered_data['KWH'],
-                alpha=1, label=date.strftime("%Y-%m-%d"), color=color, linewidth=2)
+                alpha=1, label=date.strftime("%Y-%m-%d"), color=color, linewidth=newlinewidth)
 
-    add_lines(avg_kwh_df, 'black', 'Avg. KWH', ax, dk_start_time, 6)
+    add_lines(avg_kwh_df, 'red', 'Gennemsnit', ax, dk_start_time, 2)
 
     # print(df)
     plt.xlabel("Klokken")
-    plt.ylabel("KwP")
+    plt.ylabel("KwP/Procent")
     plt.title(title + " pr. dag")
     plt.legend()
