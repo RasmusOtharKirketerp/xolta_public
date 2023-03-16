@@ -1,6 +1,8 @@
 
 This will launch a python plots and displays the battery status, solar cell production, and electricity grid consumption metrics for the last many days day. 
 
+Exports plot to .png and csv files (see pictures in this repo)
+
 ## Data Sources
 
 The data for this program is sourced from your XOLTA battery system. The data is collected almost real-time.
