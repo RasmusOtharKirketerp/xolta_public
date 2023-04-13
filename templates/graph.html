@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ human_text }}</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <h1>{{ human_text }}</h1>
+    <div id="plot"></div>
+    <script>
+        // Parse the JSON data received from the server
+        var data = JSON.parse('{{ df_json|safe }}');
+
+        // Prepare the data for plotting
+        var x = data.map(d => new Date(d.x));
+        var y = data.map(d => d.KWH);
+
+        // Create the plot
+        var trace = {
+            x: x,
+            y: y,
+            mode: 'lines',
+            line: { shape: 'spline' },
+            name: '{{ human_text }}'
+        };
+
+        var layout = {
+            title: '{{ human_text }}',
+            xaxis: { title: 'Klokken' },
+            yaxis: { title: 'KwP/Procent' }
+        };
+
+        Plotly.newPlot('plot', [trace], layout);
+    </script>
+</body>
+
+</html>
